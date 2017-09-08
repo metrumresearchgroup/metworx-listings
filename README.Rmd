@@ -1,0 +1,213 @@
+---
+title: "Metworx v 3.0.2 software listing"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+.libPaths("lib")
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r install-packages, eval=FALSE}
+install.packages("jsonlite", lib="lib")
+install.packages("stringr", lib="lib")
+```
+
+```{r load-libraries}
+library(jsonlite)
+library(stringr)
+```
+
+
+## Operating system
+
+```{r os}
+ubuntuv <- system("lsb_release -a", intern=TRUE)
+writeLines(ubuntuv)
+```
+
+
+## R
+
+R is a freeware statistical modeling language.
+
+```{r R}
+rv <- system("R --version", intern=TRUE)
+writeLines(rv)
+```
+
+## Rstudio-server and rstudio deskop
+
+Rstudio server is available as a webapp and rstudio desktop is available via the desktop.  Both are the open source versions (freeware) and require no license.
+Rstudio server and rstudio desktop are set to match in version number.
+
+```{r rstudio}
+rstudiov <- system("rstudio-server version", intern=TRUE)
+writeLines(rstudiov)
+```
+
+## PiranaJS
+
+PiranaJS is available via a web application and requires a user provided license.
+
+```{r piranajs}
+piranajsv <- fromJSON("/opt/pirana/piranajs/current/package.json")$version
+writeLines(piranajsv)
+```
+
+
+## Pirana Desktop
+
+Pirana Desktop is available via the desktop and requires a user provided license.
+
+```{r pirana-desktop}
+piranav <- readLines("/opt/pirana/pirana/pirana.pl")
+piranav <- piranav[grep("our \\$version|our \\$pirana_build", piranav)]
+piranav <- str_extract(piranav, c("[[:digit:]]+.[[:digit:]]+.[[:digit:]]+", "[[:digit:]]+"))
+piranav <- paste(c("Version:", "Build:"), piranav)
+writeLines(piranav)
+```
+
+
+## gFortran
+
+gFortran is a freeware compiler as part of the GNU compiler suite.
+
+```{r gfort}
+gfv <- system("gfortran --version", intern=TRUE)[1]
+writeLines(gfv)
+```
+
+
+## IntelFortran
+
+Intel Fortran is available and requires a user provided license.
+
+```{r ifort, warning=FALSE}
+ifv <- system2("ifort", "-v", stderr=TRUE)
+writeLines(ifv)
+```
+
+## OpenBUGS
+
+OpenBUGS is freeware Bayesian statistical modeling software.
+
+```{r openbugs}
+# openbugsv <- system("OpenBUGS", intern=TRUE)
+openbugsv <- "OpenBUGS version 3.2.3 rev 1012"
+writeLines(openbugsv)
+```
+
+## Stan
+
+Stan is freeware Bayesian statstical modeling software.
+
+```{r stan}
+stanv <- installed.packages()["rstan","Version"]
+writeLines(stanv)
+```
+
+## Python
+
+Python is a freeware computer language.
+
+```{r python, warning=FALSE}
+pythonv <- system2("python","--version", stderr=TRUE)
+writeLines(pythonv)
+```
+
+## PsN
+
+PsN is freeware used for managing NONMEM job submission and Pharmacometric tasks.
+
+```{r psn}
+psnv <- system("which execute | xargs ls -l", intern=TRUE)
+psnv <- str_extract(psnv, "[[:digit:]].[[:digit:]].[[:digit:]]")
+writeLines(psnv)
+```
+
+
+## NONMEM
+
+NONMEM (Icon) is modeling software that requires a user provided license.  NONMEM is installed on each AMI using both the gFortran and Intel compiler.  gFortran compiled installations have been appended with "gf":
+
+```{r nonmem}
+nmv <- list.dirs("/opt/NONMEM", recursive=FALSE)
+writeLines(nmv)
+```
+
+## Grid Engine
+
+Freeware HPC managment software.
+
+```{r sge}
+gev <- system("qstat -help", intern=TRUE)[1]
+writeLines(gev)
+```
+
+## TexLive
+
+Freeware document rendering software.
+
+```{r texlive}
+latexv <- system("pdflatex -v", intern=TRUE)[1]
+writeLines(latexv)
+```
+
+## Subversion
+
+Freeware version control software.
+
+```{r svn}
+svnv <- system("svn help", intern=TRUE)[2]
+writeLines(svnv)
+```
+
+## Shiny pro
+
+Shiny server pro is available via Envision using licenses provided by Metworx.
+
+```{r shiny-server}
+shinyv <- system("shiny-server", intern=TRUE)[1]
+shinyv <- str_extract(shinyv, "v[[:digit:]].[[:digit:]].[[:digit:]].[[:digit:]]*")
+writeLines(shinyv)
+```
+
+## SAS
+
+SAS is available via the desktop and requires a user provided license.
+
+```{r sas}
+sasv <- basename(list.dirs("/usr/local/SASHome/SASFoundation/", recursive=F))
+writeLines(sasv)
+```
+
+## Monolix
+
+Lixoft Monolix is available via the desktop and requires a user provided license.
+
+```{r monlix}
+monolixv <- basename(list.dirs("/opt/monolix", recursive=FALSE))
+monolixv <- monolixv[grep("onolix", monolixv)]
+writeLines(monolixv)
+```
+
+## Matlab
+
+Mathworks Matlab is available via the desktop and requires a user provided license.
+
+```{r matlab}
+matlabv <- system("which matlab | xargs ls -al", intern=TRUE)
+matlabv <- str_extract(matlabv, "R[[:digit:]]+[[:alnum:]]*")
+writeLines(matlabv)
+```
+
+
+## Git
+
+Git is freeware version control software.
+
+```{r git}
+gitv <- system("git --version", intern=TRUE)
+writeLines(gitv)
+```
+
