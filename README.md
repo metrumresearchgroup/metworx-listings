@@ -1,4 +1,4 @@
-Metworx v 3.0.2 software listing
+Metworx v 3.0.2-r2 software listing
 ================
 
 | Region       | Intel12 AMI  | Intel14 AMI  |
