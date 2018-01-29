@@ -5,23 +5,37 @@ output: github_document
 
 
 ```{r setup, include=FALSE}
+dir.create("lib")
 .libPaths("lib")
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r}
-metworxv <- "3.0.2"
+
+
+```{r install-packages, message=FALSE}
+if(!require("tibble")) install.packages("tibble")
+if(!require("jsonlite")) install.packages("jsonlite")
+if(!require("stringr")) install.packages("stringr")
+if(!require("dplyr")) install.packages("dplyr")
 ```
 
-
-```{r install-packages, eval=FALSE}
-install.packages("jsonlite", lib="lib")
-install.packages("stringr", lib="lib")
-```
-
-```{r load-libraries}
+```{r load-libraries, message=FALSE}
 library(jsonlite)
 library(stringr)
+library(dplyr)
+library(tibble)
+library(knitr)
+```
+
+
+```{r}
+metworxv <- "3.0.2-r2"
+ami <- tribble(
+  ~Region,       ~`Intel12 AMI`,  ~`Intel14 AMI`,
+  "us-west-2",    "ami-f543fc8d", "ami-9f45fae7",
+  "us-east-1",    "ami-b8a39bc2", "ami-faa19980",
+  "eu-central-1", "ami-5dab3032", "ami-d5b42fba"
+)
 ```
 
 ```{r get-versions, message=FALSE, warning=FALSE}
@@ -152,9 +166,14 @@ gitv_table <- c("Git",
 ```
 
 
+```{r ami}
+ami %>% kable
+```
+
+
 ```{r table}
 versions <- lapply(grep("_table$",ls(),value=TRUE),get)
 tab <- do.call(rbind, versions)
-knitr:::kable(tab, col.names=c("Software","Version"))
+kable(tab, col.names=c("Software","Version"))
 ```
 

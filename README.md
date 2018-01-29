@@ -1,6 +1,12 @@
 Metworx v 3.0.2 software listing
 ================
 
+| Region       | Intel12 AMI  | Intel14 AMI  |
+|:-------------|:-------------|:-------------|
+| us-west-2    | ami-f543fc8d | ami-9f45fae7 |
+| us-east-1    | ami-b8a39bc2 | ami-faa19980 |
+| eu-central-1 | ami-5dab3032 | ami-d5b42fba |
+
 | Software               | Version                        |
 |:-----------------------|:-------------------------------|
 | SGE                    | 8.1.9                          |
