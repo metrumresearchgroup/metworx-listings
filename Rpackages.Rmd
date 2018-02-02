@@ -1,0 +1,81 @@
+---
+title: "Metworx v 3.0.2-r2 R packages"
+output: github_document
+---
+
+  
+# R package compatibility wtih Metworx 3.0.2-r2
+
+```{r, include=FALSE}
+library(knitr)
+```
+
+Please refer to this listing when having R package installation problems.
+
+The following list of packages were installed to a temporary location on the Metworx 3.0.2-r2 AMI as part of the validation process.  These packages (at the indicated version) are *not still located on the AMI*, but are/were installable via CRAN.  Newer versions of these packages may install without issue, but the versions listed should _always_ be able to be installed on the indicated version of the AMI.
+
+If you have additional R packages you'd like to have validated for installation upon the next AMI release, please open an issue in the [GitHub issue tracker](https://github.com/metrumresearchgroup/metworx-listings/issues) and let us know which ones you'd like added.
+
+
+
+```{r, include=FALSE}
+packages <- 
+  c(  
+    "akima"         ,  "arm"          ,  "assertthat"     ,"BB"           ,  
+    "bdsmatrix"    ,  "bvpSolve"     ,  "car"          ,  "caret"         ,  
+    "covr"         ,  "DBI"          ,  "dfoptim"        ,"DoseFinding"  ,  
+    "expm"         ,  "extrafont"    ,  "extrafontdb"  ,  "fastmatch"     ,  
+    "fda"          ,  "flexsurv"     ,  "gam"            ,"gamlss"       ,  
+    "gamlss.data"  ,  "gamlss.dist"  ,  "gamm4"        ,  "gapminder"     ,  
+    "ggalt"        ,
+    "ggmap"        ,  "ggthemes"     ,  "gmp"            ,"gplots"       ,  
+    "gridBase"     ,  "gsubfn"       ,  "gtools"       ,  "hexbin"        ,  
+    "HSAUR2"       ,  "jpeg"           ,"Lahman"       ,  "lazyeval"     ,  
+    "lme4"         ,  "lmtest"       ,  "manipulate"   ,   "MatrixModels" ,  
+    "MEMSS"        ,  "microbenchmark" ,"minqa"        ,  "mlmRev"        ,  
+    "msm"          ,  "mstate"       ,  "muhaz"      ,    "nloptr"        ,  
+    "NMF"          ,  "numDeriv"       ,"nycflights13" ,  "optextras"     ,  
+    "optimx"       ,  "pander"       ,  "pbkrtest"   ,   "PBSddesolve"    ,
+    "PBSmodelling" ,  "pkgmaker"     ,  "PKPDmodels"   ,  "plm"           ,  
+    "plotrix"      ,  "png"        ,   "quantreg"     ,  "Rcgmin"         ,  
+    "Rcpp"         ,
+    "registry"     ,"rex"          ,  "RgoogleMaps"  ,  "rJava"         ,  
+    "rjson"        ,  "RJSONIO"    ,   "rngtools"     ,  "ROCR"           ,
+    "rootSolve"      ,"RSQLite"      ,  "rtf"          ,  "Rttf2pt1"      , 
+    "Rvmmin"       ,  "RxODE"      ,    "sde"          ,  "sessioninfo"   ,
+    "setRNG"        ,  
+    "sfsmisc"      ,"SparseM"      ,  "stargazer"    ,  "svUnit"        ,  
+    "tidyverse"    ,
+    "tnet"         ,  "ucminf"     ,   "xpose4"       
+  )
+```
+
+
+
+```{r, include=FALSE}
+# Install the packages to scratch space in `/data`:
+validation_lib <- file.path("/data", "validation-lib")
+dir.create(validation_lib)
+install.packages(packages, lib = validation_lib, type="source")
+```
+
+
+```{r, include=FALSE}
+setdiff(packages, installed.packages(validation_lib))
+```
+
+# Listing of versions
+
+```{r}
+kable(installed.packages(validation_lib)[,c("Package","Version","Built","LibPath")], row.names = FALSE)
+```
+
+# Session info
+
+```{r, echo=FALSE}
+library(sessioninfo, lib.loc = "/data/validation-lib")
+session_info()
+```
+
+
+
