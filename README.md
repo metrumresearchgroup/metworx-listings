@@ -1,11 +1,17 @@
 Metworx v 3.0.2-r2 software listing
 ================
 
+AMI identifiers
+---------------
+
 | Region       | Intel12 AMI  | Intel14 AMI  |
 |:-------------|:-------------|:-------------|
 | us-west-2    | ami-f543fc8d | ami-9f45fae7 |
 | us-east-1    | ami-b8a39bc2 | ami-faa19980 |
 | eu-central-1 | ami-5dab3032 | ami-d5b42fba |
+
+Software versions
+-----------------
 
 | Software               | Version                        |
 |:-----------------------|:-------------------------------|
@@ -29,3 +35,8 @@ Metworx v 3.0.2-r2 software listing
 | Stan                   | 2.14.1                         |
 | Subversion             | 1.8.8                          |
 | Ubuntu (OS)            | 14.04                          |
+
+R packages
+----------
+
+A list of R package versions that are compatible with this version of Metworx can be found [here](https://github.com/metrumresearchgroup/metworx-listings/blob/master/Rpackages.md).

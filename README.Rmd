@@ -165,11 +165,13 @@ gitv_table <- c("Git",
   )
 ```
 
+## AMI identifiers
 
 ```{r ami}
 ami %>% kable
 ```
 
+## Software versions
 
 ```{r table}
 versions <- lapply(grep("_table$",ls(),value=TRUE),get)
@@ -177,3 +179,6 @@ tab <- do.call(rbind, versions)
 kable(tab, col.names=c("Software","Version"))
 ```
 
+## R packages
+
+A list of R package versions that are compatible with this version of Metworx can be found [here](https://github.com/metrumresearchgroup/metworx-listings/blob/master/Rpackages.md).
