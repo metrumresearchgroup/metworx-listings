@@ -1,4 +1,4 @@
-Metworx v 3.0.2-r2 software listing
+Metworx v 3.0.6 software listing
 ================
 
 AMI identifiers
