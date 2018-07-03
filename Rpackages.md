@@ -173,6 +173,7 @@ kable(installed.packages(validation_lib)[,c("Package","Version","Built","LibPath
 | ROCR           | 1.0-7       | 3.3.3 | /data/validation-lib |
 | R.oo           | 1.21.0      | 3.3.3 | /data/validation-lib |
 | rootSolve      | 1.7         | 3.3.3 | /data/validation-lib |
+| RPostgreSQL    | 0.6-2       | 3.3.3 | /data/validation-lib |
 | RSQLite        | 2.0         | 3.3.3 | /data/validation-lib |
 | rstudioapi     | 0.7         | 3.3.3 | /data/validation-lib |
 | rtf            | 0.4-11      | 3.3.3 | /data/validation-lib |
