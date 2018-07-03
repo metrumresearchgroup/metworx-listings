@@ -6,9 +6,10 @@ AMI identifiers
 
 | Region       | Intel12 AMI  | Intel14 AMI  |
 |:-------------|:-------------|:-------------|
-| us-west-2    | ami-f543fc8d | ami-9f45fae7 |
-| us-east-1    | ami-b8a39bc2 | ami-faa19980 |
-| eu-central-1 | ami-5dab3032 | ami-d5b42fba |
+| us-west-2    | ami-f681cb8e | ami-278ec45f |
+| us-east-1    | ami-971838e8 | ami-0d163672 |
+| eu-central-1 | ami-10447ffb | ami-02457ee9 |
+
 
 Software versions
 -----------------
