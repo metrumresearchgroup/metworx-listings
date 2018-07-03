@@ -244,7 +244,7 @@ kable(installed.packages(validation_lib)[,c("Package","Version","Built","LibPath
 
 Session info
 ============
-
+```{r}
 ─ Session info ────────────────────────────────────────────
  setting  value                       
  version  R version 3.3.3 (2017-03-06)
@@ -267,3 +267,4 @@ Session info
  stringi       1.2.3   2018-06-12 CRAN (R 3.3.3)
  stringr       1.3.1   2018-05-10 CRAN (R 3.3.3)
  withr         2.1.2   2018-03-15 CRAN (R 3.3.3)
+```
