@@ -245,32 +245,25 @@ kable(installed.packages(validation_lib)[,c("Package","Version","Built","LibPath
 Session info
 ============
 
-    ## ─ Session info ──────────────────────────────────────────────────────────
-    ##  setting  value                       
-    ##  version  R version 3.3.3 (2017-03-06)
-    ##  os       Ubuntu 14.04.5 LTS          
-    ##  system   x86_64, linux-gnu           
-    ##  ui       X11                         
-    ##  language (EN)                        
-    ##  collate  en_US.UTF-8                 
-    ##  tz       Etc/UTC                     
-    ##  date     2018-02-02                  
-    ## 
-    ## ─ Packages ──────────────────────────────────────────────────────────────
-    ##  package     * version date       source        
-    ##  backports     1.0.4   2016-10-24 CRAN (R 3.3.2)
-    ##  clisymbols    1.2.0   2017-05-21 CRAN (R 3.3.3)
-    ##  digest        0.6.10  2016-08-02 CRAN (R 3.3.2)
-    ##  evaluate      0.10    2016-10-11 CRAN (R 3.3.2)
-    ##  highr         0.6     2016-05-09 CRAN (R 3.3.2)
-    ##  htmltools     0.3.5   2016-03-21 CRAN (R 3.3.2)
-    ##  knitr       * 1.15.1  2016-11-22 CRAN (R 3.3.2)
-    ##  magrittr      1.5     2014-11-22 CRAN (R 3.3.2)
-    ##  Rcpp          0.12.8  2016-11-17 CRAN (R 3.3.2)
-    ##  rmarkdown     1.3     2016-12-21 CRAN (R 3.3.2)
-    ##  rprojroot     1.1     2016-10-29 CRAN (R 3.3.2)
-    ##  sessioninfo * 1.0.0   2017-06-21 CRAN (R 3.3.3)
-    ##  stringi       1.1.2   2016-10-01 CRAN (R 3.3.2)
-    ##  stringr       1.1.0   2016-08-19 CRAN (R 3.3.2)
-    ##  withr         2.1.1   2017-12-19 CRAN (R 3.3.3)
-    ##  yaml          2.1.14  2016-11-12 CRAN (R 3.3.2)
+─ Session info ────────────────────────────────────────────
+ setting  value                       
+ version  R version 3.3.3 (2017-03-06)
+ os       Ubuntu 14.04.5 LTS          
+ system   x86_64, linux-gnu           
+ ui       RStudio                     
+ language (EN)                        
+ collate  en_US.UTF-8                 
+ tz       Etc/UTC                     
+ date     2018-07-03                  
+
+─ Packages ─────────────────────────────────────────────────
+ package     * version date       source        
+ clisymbols    1.2.0   2017-05-21 CRAN (R 3.3.3)
+ evaluate      0.10    2016-10-11 CRAN (R 3.3.2)
+ highr         0.6     2016-05-09 CRAN (R 3.3.2)
+ knitr       * 1.20    2018-02-20 CRAN (R 3.3.3)
+ magrittr      1.5     2014-11-22 CRAN (R 3.3.2)
+ sessioninfo * 1.0.0   2017-06-21 CRAN (R 3.3.3)
+ stringi       1.2.3   2018-06-12 CRAN (R 3.3.3)
+ stringr       1.3.1   2018-05-10 CRAN (R 3.3.3)
+ withr         2.1.2   2018-03-15 CRAN (R 3.3.3)
