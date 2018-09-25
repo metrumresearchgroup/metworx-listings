@@ -4,11 +4,11 @@ Metworx v 3.0.6 software listing
 AMI identifiers
 ---------------
 
-| Region       | Intel12 AMI  | Intel14 AMI  |
-|:-------------|:-------------|:-------------|
-| us-west-2    | ami-f681cb8e | ami-278ec45f |
-| us-east-1    | ami-971838e8 | ami-0d163672 |
-| eu-central-1 | ami-10447ffb | ami-02457ee9 |
+| Region       |      Intel12 AMI      |     Intel14 AMI       |
+|:-------------|:----------------------|:----------------------|
+| us-west-2    | ami-06283a9c1a4461888 | ami-0048474bdaeddd294 |
+| us-east-1    | ami-06a0cd1d3a0bef1ae | ami-0cc2d7535508ae927 |
+| eu-central-1 | ami-036f207b96d7c0e5b | ami-0e6dd31ee4b98b135 |
 
 
 Software versions
