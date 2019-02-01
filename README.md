@@ -1,4 +1,4 @@
-Metworx v 3.0.6 software listing
+Metworx v 3.1.0 software listing
 ================
 
 AMI identifiers
@@ -6,10 +6,10 @@ AMI identifiers
 
 | Region       |      Intel12 AMI      |     Intel14 AMI       |
 |:-------------|:----------------------|:----------------------|
-| us-west-2    | ami-06283a9c1a4461888 | ami-0048474bdaeddd294 |
-| us-east-1    | ami-06a0cd1d3a0bef1ae | ami-0cc2d7535508ae927 |
-| eu-central-1 | ami-036f207b96d7c0e5b | ami-0e6dd31ee4b98b135 |
-
+| us-west-2    | ami-0042cc5203badbe9b |                       |
+| us-east-1    | ami-0ca1fe4c1165f7e21 |                       |
+| eu-central-1 | ami-0705c6086508d89eb |                       |
+| ap-northeast-1 | ami-0ca81e19d083e092c |                     |
 
 Software versions
 -----------------
@@ -21,19 +21,19 @@ Software versions
 | Git                    | 2.11.0                         |
 | Intel Fortran          | Version 12.0.4                 |
 | TexLive (LaTex)        | 3.14159265-2.6-1.40.17         |
-| Matlab                 | R2016a                         |
-| MonolixSuite           | 2016R1                         |
+| Matlab                 | R2018b                         |
+| MonolixSuite           | 2018R2                         |
 | NONMEM                 | 7.2, 7.3, 7.4                  |
 | OpenBUGS               | v 3.2.3 r 1012                 |
 | PiranaJS               | 0.1.0                          |
-| Pirana                 | Version: 2.9.7,Build: 20170815 |
+| Pirana                 | Version: 2.9.9                 |
 | Perl speaks NONMEM     | 4.7.0                          |
 | Python                 | 2.7.6                          |
-| Rstudio-server/desktop | 1.0.153                        |
-| R                      | 3.3.3                          |
+| Rstudio-server/desktop | 1.1.463                        |
+| R                      | 3.5.1                          |
 | SAS                    | 9.4                            |
-| Shiny server pro       | v1.5.2.764                     |
-| Stan                   | 2.14.1                         |
+| Shiny server pro       | v1.5.10.990                     |
+| Stan                   | 2.18.2                         |
 | Subversion             | 1.8.8                          |
 | Ubuntu (OS)            | 14.04                          |
 
