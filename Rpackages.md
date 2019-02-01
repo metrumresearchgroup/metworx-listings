@@ -1,7 +1,7 @@
 Metworx v 3.1.0 R packages
 ================
 
-R package compatibility wtih Metworx 3.1.0
+R package compatibility with Metworx 3.1.0
 =============================================
 
 Please refer to this listing when having R package installation problems.
