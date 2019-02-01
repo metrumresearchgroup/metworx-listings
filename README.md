@@ -1,7 +1,8 @@
-Metworx v 3.1.0 software listing
+Metworx v 3.1.0 (R v3.5) software listing
 ================
 
-For details regarding the v3.0.6 - R3.3 AMI see [here](./README-3.0.6.md)
+For details regarding the v3.0.6 (R v3.3) AMI see [here](./3.0.7-README.md)
+
 AMI identifiers
 ---------------
 
@@ -41,4 +42,4 @@ Software versions
 R packages
 ----------
 
-A list of R package versions that are compatible with this version of Metworx can be found [here](https://github.com/metrumresearchgroup/metworx-listings/blob/master/Rpackages.md).
+A list of R package versions that are compatible with this version of Metworx can be found [here](https://github.com/metrumresearchgroup/metworx-listings/blob/master/Rpackages-3.0.7.md).
