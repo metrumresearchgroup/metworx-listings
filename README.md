@@ -1,7 +1,7 @@
 Metworx v 3.1.0 (R v3.5) software listing
 ================
 
-For details regarding the v3.0.6 (R v3.3) AMI see [here](./3.0.7-README.md)
+For details regarding the v3.0.7 (R v3.3) AMI see [here](./3.0.7-README.md)
 
 AMI identifiers
 ---------------
