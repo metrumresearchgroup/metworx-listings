@@ -42,4 +42,4 @@ Software versions
 R packages
 ----------
 
-A list of R package versions that are compatible with this version of Metworx can be found [here](https://github.com/metrumresearchgroup/metworx-listings/blob/master/Rpackages-3.0.7.md).
+A list of R package versions that are compatible with this version of Metworx can be found [here](Rpackages.md).
