@@ -8,10 +8,10 @@ AMI identifiers
 
 | Region       |      Intel12 AMI      |     Intel14 AMI       |
 |:-------------|:----------------------|:----------------------|
-| us-west-2    | ami-0042cc5203badbe9b |                       |
-| us-east-1    | ami-0ca1fe4c1165f7e21 |                       |
-| eu-central-1 | ami-0705c6086508d89eb |                       |
-| ap-northeast-1 | ami-0ca81e19d083e092c |                     |
+| us-west-2    | ami-0042cc5203badbe9b | ami-003753ab111811182 |
+| us-east-1    | ami-0ca1fe4c1165f7e21 | ami-0b2818d219668797c |
+| eu-central-1 | ami-0705c6086508d89eb | ami-03ee441ff3a20e92c |
+| ap-northeast-1 | ami-0ca81e19d083e092c | ami-01fc3f3df221b8b33 |
 
 Software versions
 -----------------
